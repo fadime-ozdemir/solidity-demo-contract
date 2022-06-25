@@ -1,0 +1,602 @@
+{
+	"id": "03f2a15835826124e7525a30c9a26e27",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/criptoKids.sol": {
+				"content": "// SPDX-License-Identifier: unlicensed\r\npragma solidity ^0.8.7;\r\n\r\ncontract CryptoKids{\r\n    // owner parent : wallet address\r\n    address owner;\r\n   constructor (){\r\n       owner = msg.sender;\r\n   } \r\n    \r\n    // define kid\r\n\r\n    // add kids to contract\r\n    \r\n    // deposit founds to contract to kid's accounts\r\n    \r\n    // kid checks if can withdraw\r\n\r\n    // withraw money\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/criptoKids.sol": {
+				"CryptoKids": {
+					"abi": [
+						{
+							"inputs": [],
+							"stateMutability": "nonpayable",
+							"type": "constructor"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/criptoKids.sol\":67:385  contract CryptoKids{\r... */\n  mstore(0x40, 0x80)\n    /* \"contracts/criptoKids.sol\":150:199  constructor (){\r... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n    /* \"contracts/criptoKids.sol\":182:192  msg.sender */\n  caller\n    /* \"contracts/criptoKids.sol\":174:179  owner */\n  0x00\n  dup1\n    /* \"contracts/criptoKids.sol\":174:192  owner = msg.sender */\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xffffffffffffffffffffffffffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffffffffffffffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"contracts/criptoKids.sol\":67:385  contract CryptoKids{\r... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/criptoKids.sol\":67:385  contract CryptoKids{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220763287437bf463455612aa9ba2b588bd3dc23499dc26215ce17b9347df93e86164736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"@_12": {
+									"entryPoint": null,
+									"id": 12,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550603f80605d6000396000f3fe6080604052600080fdfea2646970667358221220763287437bf463455612aa9ba2b588bd3dc23499dc26215ce17b9347df93e86164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLER PUSH1 0x0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x3F DUP1 PUSH1 0x5D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH23 0x3287437BF463455612AA9BA2B588BD3DC23499DC26215C 0xE1 PUSH28 0x9347DF93E86164736F6C634300080700330000000000000000000000 ",
+							"sourceMap": "67:318:0:-:0;;;150:49;;;;;;;;;;182:10;174:5;;:18;;;;;;;;;;;;;;;;;;67:318;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220763287437bf463455612aa9ba2b588bd3dc23499dc26215ce17b9347df93e86164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH23 0x3287437BF463455612AA9BA2B588BD3DC23499DC26215C 0xE1 PUSH28 0x9347DF93E86164736F6C634300080700330000000000000000000000 ",
+							"sourceMap": "67:318:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "24332",
+								"totalCost": "36932"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 150,
+									"end": 199,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 182,
+									"end": 192,
+									"name": "CALLER",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 179,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 174,
+									"end": 179,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 174,
+									"end": 192,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 67,
+									"end": 385,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220763287437bf463455612aa9ba2b588bd3dc23499dc26215ce17b9347df93e86164736f6c63430008070033",
+									".code": [
+										{
+											"begin": 67,
+											"end": 385,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 67,
+											"end": 385,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 67,
+											"end": 385,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 67,
+											"end": 385,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 67,
+											"end": 385,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 67,
+											"end": 385,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/criptoKids.sol\":\"CryptoKids\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/criptoKids.sol\":{\"keccak256\":\"0xd9decccba41f58b0a8ac5a22335a482b46ed35e8e8c47eb8e15db921974ea3e1\",\"license\":\"unlicensed\",\"urls\":[\"bzz-raw://5a1125212382c426fd4e1664986df64e1577e4b96d0f1eef769ca3573a072753\",\"dweb:/ipfs/QmQLEm1dkqweitPH5jzihxBWfGPv4g7ckqERtwuwuxqZ2n\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "contracts/criptoKids.sol:CryptoKids",
+								"label": "owner",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_address"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/criptoKids.sol": {
+				"ast": {
+					"absolutePath": "contracts/criptoKids.sol",
+					"exportedSymbols": {
+						"CryptoKids": [
+							13
+						]
+					},
+					"id": 14,
+					"license": "unlicensed",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".7"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "40:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 13,
+							"linearizedBaseContracts": [
+								13
+							],
+							"name": "CryptoKids",
+							"nameLocation": "76:10:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "139:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "131:13:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "131:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 11,
+										"nodeType": "Block",
+										"src": "164:35:0",
+										"statements": [
+											{
+												"expression": {
+													"id": 9,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"leftHandSide": {
+														"id": 6,
+														"name": "owner",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 3,
+														"src": "174:5:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"nodeType": "Assignment",
+													"operator": "=",
+													"rightHandSide": {
+														"expression": {
+															"id": 7,
+															"name": "msg",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 4294967281,
+															"src": "182:3:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_magic_message",
+																"typeString": "msg"
+															}
+														},
+														"id": 8,
+														"isConstant": false,
+														"isLValue": false,
+														"isPure": false,
+														"lValueRequested": false,
+														"memberName": "sender",
+														"nodeType": "MemberAccess",
+														"src": "182:10:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														}
+													},
+													"src": "174:18:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"id": 10,
+												"nodeType": "ExpressionStatement",
+												"src": "174:18:0"
+											}
+										]
+									},
+									"id": 12,
+									"implemented": true,
+									"kind": "constructor",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 4,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "162:2:0"
+									},
+									"returnParameters": {
+										"id": 5,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "164:0:0"
+									},
+									"scope": 13,
+									"src": "150:49:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 14,
+							"src": "67:318:0",
+							"usedErrors": []
+						}
+					],
+					"src": "40:345:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
